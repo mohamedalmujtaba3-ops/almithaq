@@ -1,0 +1,46 @@
+almithaq maps api key
+AIzaSyA7xC-9zwwtWezEZ0pkbx7i5dijkzuk2_s
+
+
+سعر التوصيل
+تحديث موقع الدليفري
+
+
+
+
+
+
+if u used seller lat long anywhere(but distance calculation) remove it and add it to order items
+user -> ماركت لمتجر
+admin -> اضافة دليفري وازالة الدفع
+sms
+
+lat = 0 -> lat = 0 || 0.0 || 0.00
+
+
+
+
+
+
+<?php
+
+include "../../connect.php";
+
+$userid = filterRequest("usersid");
+
+$data  = getAllData("cartview", "cart_usersid = $userid", null, false);
+
+$stmt = $con->prepare("SELECT SUM(itemsprice) as totalprice , count(countitems) as totalcount FROM `cartview`  
+WHERE  cartview.cart_usersid =  $userid 
+GROUP BY cart_usersid  ");
+
+$stmt->execute();
+
+
+$datacountprice = $stmt->fetch(PDO::FETCH_ASSOC);
+
+echo json_encode(array(
+    "status" => "success",
+    "countprice" =>  $datacountprice,
+    "datacart" => $data,
+));
