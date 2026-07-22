@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "265869312412",
+    "project_id": "almithaq-delivery",
+    "storage_bucket": "almithaq-delivery.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265869312412:android:285ff62644c5f86f3d8859",
+        "android_client_info": {
+          "package_name": "admin.almithaq.delivery"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDg8Fw0rBse1Vx6SavfWpNn8k70UtOGgQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265869312412:android:41f57ed90daccd683d8859",
+        "android_client_info": {
+          "package_name": "client.almithaq.delivery"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDg8Fw0rBse1Vx6SavfWpNn8k70UtOGgQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265869312412:android:4c27cf7dda23f8e03d8859",
+        "android_client_info": {
+          "package_name": "merchant.almithaq.delivery"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDg8Fw0rBse1Vx6SavfWpNn8k70UtOGgQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
